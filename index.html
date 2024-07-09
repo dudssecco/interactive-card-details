@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Interactive Card Details</title>
+</head>
+<body>
+    <div class="container">
+        <section class="cards">
+            <div class="card_front">
+                <div class="front_logo">
+                    <img src="assets/images/card-logo.svg" alt="">
+                </div>
+                <div class="front_number">
+                    0000 0000 0000 0000
+                </div>
+                <div class="name-date_front">
+                    <div class="name_front">Jane Appleseed</div>
+                    <div class="date_front">
+                        <span class="MM">00</span> / <span class="YY">00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_back">
+                <div class="cvc_back">
+                    000
+                </div>
+            </div>
+        </section>
+        <form class="form">
+            <div class="input_line">
+                <label for="name">Cardholder Name</label><br>
+                <input type="text" id="name" placeholder="e.g. Jane Appleseed">
+            </div>
+            <div class="input_line">
+                <label for="number">Card Number</label><br>
+                <input type="number" id="number" maxlength="16" placeholder="1234 5678 9123 0000">
+            </div>
+            <div class="input_line_last">
+                <div class="input_box">
+                    <label for="date">Date</label><br>
+                    <input type="number" id="date" class="month" maxlength="2" placeholder="MM">
+                    <input type="number" id="date" class="year" maxlength="2" placeholder="YY">
+                </div>
+                <div class="input_box">
+                    <label for="cvc">CVC</label><br>
+                    <input type="number" id="cvc" maxlength="3" placeholder="123">
+                </div>
+            </div>
+            <input id="submit" type="submit" value="Confirm">
+        </form>
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
